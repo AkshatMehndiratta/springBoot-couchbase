@@ -19,11 +19,7 @@ public class SpringBootStarterCouchbaseApplication {
 	@Autowired
 	private EmployeeRepo repository;
 
-	@PostConstruct
-	public void initEmployeeRepo(){
-		repository.saveAll(Stream.of(new Employee(124, "abc"),new Employee(125,"xyz"))
-				.collect(Collectors.toList()));
-	}
+
 
 	@GetMapping("/fetchAllEmployees")
 	public Iterable<Employee> getAll(){

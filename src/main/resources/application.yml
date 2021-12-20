@@ -1,6 +1,6 @@
 spring:
   couchbase:
-    bootstrap-hosts: localhost:8091
+    bootstrap-hosts: localhost
     bucket:
       name: Employee
       password: pulsesg
